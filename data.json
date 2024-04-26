@@ -1,0 +1,10 @@
+[
+  {
+    "login": "Alexand",
+    "password": "d388f58f95526f15a5b0ed4ff9a267f4",
+    "confirm_password": "123321",
+    "email": "a@a.ru",
+    "name": "Alexandr",
+    "salt": "2f4d836a0d"
+  }
+]
