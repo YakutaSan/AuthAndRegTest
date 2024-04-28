@@ -16,7 +16,7 @@ class User
     {
         $errors = [];
 
-        if ($_COOKIE) {
+        if ($_SESSION) {
             $errors['auth'] = 'You are logged in';
         }
 
@@ -62,6 +62,7 @@ class User
 
         // Защита пароля
         $userData['password'] = md5($userData['password'] . $userData['salt']);
+        $userData['confirm_password'] = md5($userData['confirm_password'] . $userData['salt']);
 
         // Добавление в базу
         $this->database->addUser($userData);

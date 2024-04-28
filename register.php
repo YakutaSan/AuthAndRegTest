@@ -17,6 +17,8 @@ $userData = [
 
 $errors = $user->register($userData);
 
+// print_r($_SESSION);
+
 if ($errors) {
     echo json_encode(['success' => false, 'errors' => $errors]);
 } else {
